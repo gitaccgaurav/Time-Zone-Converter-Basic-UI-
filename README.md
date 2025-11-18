@@ -1,2 +1,3 @@
 # Time-Zone-Converter-Basic-UI-
- The Time Zone Converter is a Python-based application that allows users to convert date and time values between different time zones accurately. It uses the datetime and pytz libraries to handle time conversion and time zone localization, including daylight saving time adjustments.
+ The Time Zone Converter is a Python-based application that allows users to convert date and time values between different time zones accurately. It uses the datetime and pytz libraries to handle time conversion and time zone localization, including daylight saving time adjustments. Users can input a specific date and time, specify the source time zone, and select the target time zone. The program then outputs the corresponding time in the target time zone. This ensures accurate conversions across global time zones and helps users working or communicating across different regions.
+
