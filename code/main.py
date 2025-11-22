@@ -32,9 +32,9 @@ class App:
         self.time_str = self.time_str_entry.get()
         self.from_tz = self.from_tz_entry.get()
         self.to_tz = self.to_tz_entry.get()
+        self.output()
     def output(self):
-        print(tzc(self.time_str,self.from_tz_entry,self.to_tz_entry))
-
+        print(tzc(self.time_str, self.from_tz, self.to_tz))
     def run(self):
         self.window.mainloop()
 
@@ -44,10 +44,4 @@ if __name__ == "__main__":
     app.main_window()
     app.entry()
     app.run()
-    app.output()
 
-# time_str = input("Enter time")
-# from_tz = input("Enter your timezone")
-# to_tz = input("Enter target timezone")
-# result = time_zone_convertor(time_str,from_tz,to_tz)
-# print(result)
