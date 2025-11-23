@@ -1,7 +1,7 @@
 
 from settings import *
 from tkinter.constants import  N,S,W, E
-
+import time
 from settings import WINDOW_HEIGHT,WINDOW_WIDTH ,window
 from  timezone_converter import time_zone_convertor as tzc
 
@@ -50,6 +50,7 @@ class App:
         self.to_tz_entry.grid(row=row, column=1, sticky=W, padx=10, pady=10)
 
         row+=1
+
         submit_button = tk.Button(self.window,
                                   text = "Convert Time",
                                   command=self.submit,
@@ -69,12 +70,13 @@ class App:
         self.to_tz = self.to_tz_entry.get()
         result = self.output()
         self.result_label = tk.Label(self.window,
-                                     text=f'{result}',
+                                     text=f'🔄 Conversion Result:\n 📍 {self.from_tz}: {self.time_str} \n 🎯 {self.to_tz}: {result}',
                                      bg="#2c3e50",
                                      fg="#ecf0f1",
                                      padx=20,
                                      pady=15,
                                      font=("Arial", 16))
+
         self.result_label.grid(row=23, column=0, columnspan=2, sticky=W + E, padx=50, pady=20)
 
 
